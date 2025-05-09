@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PAYMENT FORM</title>
+       
+        <link rel="stylesheet" href="payment.css">
+    </head>
+    <body>
+        <div class="conatainer">
+        <form>
+            <h1 class="main_head">PAYMENT FORM</h1>
+            <hr>
+            <h2>CONTACT INFORMATION</h2>
+            <p>required fileds are followed by *</p>
+            <p>NAME:* <input type="text" name="name" required placeholder="RAM"></p>
+            <fieldset><!--used to make box which contain some info-->
+                <legend>GENDER*</legend><!--used to give name to box-->
+            <p>
+                Male <input type="radio"  name="gender" id="gender"> 
+                Female <input type="radio"  name="gender" id="gender"> 
+            </p>
+        </fieldset>
+        <p>Address:<textarea name="address" id="address" cols="100" rows="8"></textarea><!--textarea gives large space to contain information--></p>
+        <p>Email:* <input type="email" name="email" id="email"></p>
+        <p>Pincode:*<input type="number" name="pincode" id="pincode"></p>
+        <h2>PAYMENT INFORMATION</h2>
+        <p>Card Type:*
+            <select name="card_type" id=""card_type><!--we use select in situation were user want to select any one out of more option-->
+                <option value="">--SELECT A CARD TYPE--</option>
+                <option value="rupay">Rupay</option> 
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">mastercard</option>
+            </select>
+        </p>
+         <p>Card number:*<input type="number" name="card_number" id="card_number"></p>
+         <p>Expiration date:*<input type="date" name="date" id="date"></p>
+         <p>CVV:*<input type="password" name="cvv" id="cvv"> </p>
+         <input type="submit" value="Pay now">
+        </form>
+    </div>
+    </body>
+</html>
